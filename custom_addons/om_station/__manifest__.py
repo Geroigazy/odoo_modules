@@ -10,7 +10,6 @@
     'installable': True,
     'auto_install': False,
     'assets': {},
-    'post_init_hook': '_synchronize_cron',
     'license': 'LGPL-3',
     'sequence': -100,
     'application': True,
