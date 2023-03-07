@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_station_root"
+              name="Station menu"
+              sequence="0"/>
+    <menuitem id="menu_customer_details"
+              name="Customer detail"
+              parent="menu_station_root"
+              sequence="0"/>
+    <menuitem id="menu_customer"
+              name="Customer"
+              parent="menu_customer_details"
+              sequence="0"/>
+</odoo>

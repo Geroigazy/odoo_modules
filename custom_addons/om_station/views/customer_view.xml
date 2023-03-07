@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_station_customer" model="ir.actions.act_window">
+        <field name="name">Customers</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">station.customer</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first customer!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_customer"
+              name="Customer"
+              action="action_station_customer"
+              parent="menu_customer_details"
+              sequence="0"/>
+</odoo>

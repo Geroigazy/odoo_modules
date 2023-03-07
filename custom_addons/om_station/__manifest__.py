@@ -5,7 +5,11 @@
     'summary': 'Station Management system',
     'description': """This mod""",
     'depends': [],
-    'data': [],
+    'data': [
+        'security\ir.model.access.csv',
+        'views\menu.xml',
+        'views\customer_view.xml',
+    ],
     'demo': [],
     'installable': True,
     'auto_install': False,
