@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access.station.customer,access_station_customer,om_station.model_station_customer,base.group_user,1,1,1,1
+access.station.train,access_station_train,om_station.model_station_train,base.group_user,1,1,1,1
+access.train.tickets,access_train_tickets,om_station.model_train_tickets,base.group_user,1,1,1,1

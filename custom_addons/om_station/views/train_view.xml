@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_station_train_tree" model="ir.ui.view">
+        <field name="name">station.train.tree</field>
+        <field name="model">station.train</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="train_name"/>
+                <field name="destination"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_station_train_form" model="ir.ui.view">
+        <field name="name">station.train.form</field>
+        <field name="model">station.train</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="train_name"/>
+                            <field name="destination"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Customers">
+                            <tree>
+                                <field name="customer_ids"/>
+                            </tree>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_station_train" model="ir.actions.act_window">
+        <field name="name">Train</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">station.train</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first train!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_train"
+              name="Train"
+              action="action_station_train"
+              parent="menu_station_root"
+              sequence="10"/>
+</odoo>

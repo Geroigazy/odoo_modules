@@ -9,6 +9,8 @@
         'security\ir.model.access.csv',
         'views\menu.xml',
         'views\customer_view.xml',
+        r'views\train_view.xml',
+        r'views\ticket_view.xml'
     ],
     'demo': [],
     'installable': True,

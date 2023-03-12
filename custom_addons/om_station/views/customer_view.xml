@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <record id="view_station_customer_tree" model="ir.ui.view">
+        <field name="name">station.customer.tree</field>
+        <field name="model">station.customer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" string="Customer name"/>
+                <field name="age"/>
+                <field name="gender"/>
+                <field name="total"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_station_customer_form" model="ir.ui.view">
+        <field name="name">station.customer.form</field>
+        <field name="model">station.customer</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="age"/>
+                            <field name="total"/>
+                        </group>
+                        <group>
+                            <field name="gender"/>
+                            <field name="train_id"/>
+                        </group>
+                    </group>
+                        <notebook>
+                            <page string="Tickets">
+                                <tree>
+                                    <field name="ticket_id"/>
+                                </tree>
+                            </page>
+                        </notebook>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
     <record id="action_station_customer" model="ir.actions.act_window">
         <field name="name">Customers</field>
         <field name="type">ir.actions.act_window</field>
