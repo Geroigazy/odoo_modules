@@ -4,12 +4,12 @@
     'category': 'Ecommerce',
     'summary': 'Sulpak Management system',
     'description': """This mod""",
-    'depends': [],
+    'depends': ['base', 'portal'],
     'data': [
         'security\ir.model.access.csv',
         'views\menu.xml',
         'views\smartphone_view.xml',
-
+        'views\shop.xml',
     ],
     'demo': [],
     'installable': True,

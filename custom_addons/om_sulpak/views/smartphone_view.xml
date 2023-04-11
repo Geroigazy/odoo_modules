@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
+<data>
     <record id="view_smartphone_tree" model="ir.ui.view">
         <field name="name">sulpak.smartphone.tree</field>
         <field name="model">sulpak.smartphone</field>
@@ -36,4 +36,6 @@
               action="action_sulpak_smartphone"
               parent="menu_sulpak_root"
               sequence="0"/>
+    <menuitem id="main_menu" name="Shop"/>
+</data>
 </odoo>
